@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gourmet Pizza Studio - Artisan Wood-Fired Pizza">
+    <title>Gourmet Pizza Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">Pizza<span>Studio</span></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#delivery">Delivery</a>
+            </nav>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <button class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#delivery">Delivery</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-wrapper" id="hero">
+            <div class="hero-sticky">
+                <div class="hero-bg-container">
+                    <canvas id="hero-canvas"></canvas>
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <h1>Artisan Wood-Fired Pizza.</h1>
+                    <p>Experience the perfect blend of traditional recipes and modern culinary mastery, crafted fresh every day.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Order Now</a>
+                        <a href="#about" class="btn btn-secondary">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container section-padding two-col">
+                <div class="about-image">
+                    <!-- Placeholder realistic image -->
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef preparing pizza">
+                </div>
+                <div class="about-text">
+                    <span class="tag">Our Story</span>
+                    <h2>Passion in Every Slice.</h2>
+                    <p>Founded in the heart of the city, PizzaStudio brings the authentic taste of Napoli to your table. We believe that great pizza starts with great ingredients, which is why we source our tomatoes, flour, and cheeses directly from artisan producers.</p>
+                    <p>Our dough is naturally leavened for 48 hours and fired in a custom-built wood oven, resulting in that perfect blistered crust that defines true Neapolitan pizza.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">48<small>h</small></span>
+                            <span class="stat-label">Dough Fermentation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">450<small>&deg;C</small></span>
+                            <span class="stat-label">Wood-Fired Oven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu bg-light" id="menu">
+            <div class="container section-padding">
+                <div class="section-header text-center">
+                    <span class="tag">Our Menu</span>
+                    <h2>Handcrafted Classics</h2>
+                    <p>Discover our selection of artisanal pizzas, made fresh to order.</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Margherita Pizza">
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-title-row">
+                                <h3>Margherita DOC</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="menu-desc">San Marzano tomato sauce, fresh buffalo mozzarella, basil, extra virgin olive oil.</p>
+                            <button class="btn btn-outline w-100">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pepperoni Pizza">
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-title-row">
+                                <h3>Spicy Pepperoni</h3>
+                                <span class="price">$19</span>
+                            </div>
+                            <p class="menu-desc">Tomato sauce, mozzarella, double artisanal pepperoni, hot honey drizzle.</p>
+                            <button class="btn btn-outline w-100">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Truffle Mushroom Pizza">
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-title-row">
+                                <h3>Truffle Mushroom</h3>
+                                <span class="price">$22</span>
+                            </div>
+                            <p class="menu-desc">White base, roasted wild mushrooms, fior di latte, truffle cream, thyme.</p>
+                            <button class="btn btn-outline w-100">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 4 -->
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Prosciutto & Arugula Pizza">
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-title-row">
+                                <h3>Prosciutto e Rucola</h3>
+                                <span class="price">$21</span>
+                            </div>
+                            <p class="menu-desc">Tomato, mozzarella, prosciutto di Parma, fresh arugula, parmesan shavings.</p>
+                            <button class="btn btn-outline w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="delivery">
+            <div class="container section-padding">
+                <div class="section-header text-center">
+                    <span class="tag">Why Choose Us</span>
+                    <h2>The PizzaStudio Promise</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>Hot, fresh pizza delivered to your door in under 30 minutes, keeping the crust crisp.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>We source local, organic produce daily to ensure the most vibrant flavors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Certified Quality</h3>
+                        <p>Our pizzaiolos are trained and certified by true Neapolitan masters.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3>Online Ordering</h3>
+                        <p>Seamless online ordering experience with real-time tracking for your delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container text-center cta-content">
+                <h2>Craving Perfection?</h2>
+                <p>Order online right now and get 15% off your first delivery with code PIZZA15.</p>
+                <a href="#menu" class="btn btn-light cta-btn">Order Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Pizza<span>Studio</span></a>
+                    <p>Authentic wood-fired pizza crafted with passion, delivered with speed.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Pizza Street, Food District</li>
+                        <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@pizzastudio.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gourmet Pizza Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
