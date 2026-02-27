@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gourmet Pizza Studio - Artisan Wood-Fired Pizza">
+    <meta name="description" content="Gourmet Pizza Studio - Pizzas Artesanais Assadas no Forno a Lenha">
     <title>Gourmet Pizza Studio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header" id="header">
         <div class="header-container">
             <a href="#" class="logo">Pizza<span>Studio</span></a>
             <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#delivery">Delivery</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Cardápio</a>
+                <a href="#delivery">Entrega</a>
             </nav>
-            <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart-count">0</span>
-            </div>
+            <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary header-cta">Contato</a>
             <button class="menu-toggle" id="mobile-menu-btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
-        <!-- Mobile Menu -->
+        <!-- Menu Mobile -->
         <div class="mobile-nav" id="mobile-nav">
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#delivery">Delivery</a>
+            <a href="#about">Sobre</a>
+            <a href="#menu">Cardápio</a>
+            <a href="#delivery">Entrega</a>
         </div>
     </header>
 
@@ -42,11 +43,14 @@
                     <div class="hero-overlay"></div>
                 </div>
                 <div class="hero-content">
-                    <h1>Artisan Wood-Fired Pizza.</h1>
-                    <p>Experience the perfect blend of traditional recipes and modern culinary mastery, crafted fresh every day.</p>
+                    <h1>Pizza Artesanal no Forno a Lenha.</h1>
+                    <p>Experimente a combinação perfeita de receitas tradicionais e maestria culinária moderna,
+                        preparadas na hora
+                        todos os dias.</p>
                     <div class="hero-buttons">
-                        <a href="#menu" class="btn btn-primary">Order Now</a>
-                        <a href="#about" class="btn btn-secondary">Our Story</a>
+                        <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-secondary">Chamar no
+                            WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -56,21 +60,26 @@
             <div class="container section-padding two-col">
                 <div class="about-image">
                     <!-- Placeholder realistic image -->
-                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef preparing pizza">
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Chef preparando pizza">
                 </div>
                 <div class="about-text">
-                    <span class="tag">Our Story</span>
-                    <h2>Passion in Every Slice.</h2>
-                    <p>Founded in the heart of the city, PizzaStudio brings the authentic taste of Napoli to your table. We believe that great pizza starts with great ingredients, which is why we source our tomatoes, flour, and cheeses directly from artisan producers.</p>
-                    <p>Our dough is naturally leavened for 48 hours and fired in a custom-built wood oven, resulting in that perfect blistered crust that defines true Neapolitan pizza.</p>
+                    <span class="tag">Nossa História</span>
+                    <h2>Paixão em Cada Fatia.</h2>
+                    <p>Fundada no coração da cidade, a PizzaStudio traz o sabor autêntico de Nápoles para a sua mesa.
+                        Acreditamos que uma grande pizza começa com grandes ingredientes, por isso selecionamos nossos
+                        tomates,
+                        farinhas e queijos diretamente de produtores artesanais.</p>
+                    <p>Nossa massa é fermentada naturalmente por 48 horas e assada em um forno a lenha personalizado,
+                        resultando naquela borda perfeitamente aerada que define a verdadeira pizza napolitana.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">48<small>h</small></span>
-                            <span class="stat-label">Dough Fermentation</span>
+                            <span class="stat-label">Fermentação Lenta</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">450<small>&deg;C</small></span>
-                            <span class="stat-label">Wood-Fired Oven</span>
+                            <span class="stat-label">Forno a Lenha</span>
                         </div>
                     </div>
                 </div>
@@ -80,69 +89,81 @@
         <section class="menu bg-light" id="menu">
             <div class="container section-padding">
                 <div class="section-header text-center">
-                    <span class="tag">Our Menu</span>
-                    <h2>Handcrafted Classics</h2>
-                    <p>Discover our selection of artisanal pizzas, made fresh to order.</p>
+                    <span class="tag">Nosso Cardápio</span>
+                    <h2>Clássicos Feitos à Mão</h2>
+                    <p>Descubra nossa seleção de pizzas artesanais, preparadas na hora especialmente para você.</p>
                 </div>
-                
+
                 <div class="menu-grid">
                     <!-- Menu Item 1 -->
                     <div class="menu-card">
                         <div class="menu-card-img">
-                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Margherita Pizza">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Pizza Margherita">
                         </div>
                         <div class="menu-card-content">
                             <div class="menu-title-row">
                                 <h3>Margherita DOC</h3>
-                                <span class="price">$16</span>
+                                <span class="price">R$ 62</span>
                             </div>
-                            <p class="menu-desc">San Marzano tomato sauce, fresh buffalo mozzarella, basil, extra virgin olive oil.</p>
-                            <button class="btn btn-outline w-100">Add to Cart</button>
+                            <p class="menu-desc">Molho de tomate San Marzano, muçarela de búfala fresca, manjericão,
+                                azeite extra virgem.</p>
+                            <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20uma%20pizza!"
+                                target="_blank" class="btn btn-outline w-100">Peça no WhatsApp</a>
                         </div>
                     </div>
 
                     <!-- Menu Item 2 -->
                     <div class="menu-card">
                         <div class="menu-card-img">
-                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pepperoni Pizza">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Pizza de Pepperoni">
                         </div>
                         <div class="menu-card-content">
                             <div class="menu-title-row">
-                                <h3>Spicy Pepperoni</h3>
-                                <span class="price">$19</span>
+                                <h3>Pepperoni Especial</h3>
+                                <span class="price">R$ 74</span>
                             </div>
-                            <p class="menu-desc">Tomato sauce, mozzarella, double artisanal pepperoni, hot honey drizzle.</p>
-                            <button class="btn btn-outline w-100">Add to Cart</button>
+                            <p class="menu-desc">Molho de tomate, muçarela, pepperoni artesanal em dobro, toque de mel
+                                picante.</p>
+                            <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20uma%20pizza!"
+                                target="_blank" class="btn btn-outline w-100">Peça no WhatsApp</a>
                         </div>
                     </div>
 
                     <!-- Menu Item 3 -->
                     <div class="menu-card">
                         <div class="menu-card-img">
-                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Truffle Mushroom Pizza">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Pizza de Cogumelos Trufada">
                         </div>
                         <div class="menu-card-content">
                             <div class="menu-title-row">
-                                <h3>Truffle Mushroom</h3>
-                                <span class="price">$22</span>
+                                <h3>Cogumelos Trufados</h3>
+                                <span class="price">R$ 88</span>
                             </div>
-                            <p class="menu-desc">White base, roasted wild mushrooms, fior di latte, truffle cream, thyme.</p>
-                            <button class="btn btn-outline w-100">Add to Cart</button>
+                            <p class="menu-desc">Base branca, mix de cogumelos assados, fior di latte, creme de trufa e
+                                tomilho.</p>
+                            <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20uma%20pizza!"
+                                target="_blank" class="btn btn-outline w-100">Peça no WhatsApp</a>
                         </div>
                     </div>
 
                     <!-- Menu Item 4 -->
                     <div class="menu-card">
                         <div class="menu-card-img">
-                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Prosciutto & Arugula Pizza">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Pizza de Presunto e Rúcula">
                         </div>
                         <div class="menu-card-content">
                             <div class="menu-title-row">
-                                <h3>Prosciutto e Rucola</h3>
-                                <span class="price">$21</span>
+                                <h3>Prosciutto e Rúcula</h3>
+                                <span class="price">R$ 82</span>
                             </div>
-                            <p class="menu-desc">Tomato, mozzarella, prosciutto di Parma, fresh arugula, parmesan shavings.</p>
-                            <button class="btn btn-outline w-100">Add to Cart</button>
+                            <p class="menu-desc">Tomate, muçarela, presunto de Parma, rúcula fresca e lascas de
+                                parmesão.</p>
+                            <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20uma%20pizza!"
+                                target="_blank" class="btn btn-outline w-100">Peça no WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -152,38 +173,39 @@
         <section class="features" id="delivery">
             <div class="container section-padding">
                 <div class="section-header text-center">
-                    <span class="tag">Why Choose Us</span>
-                    <h2>The PizzaStudio Promise</h2>
+                    <span class="tag">Por que nos escolher</span>
+                    <h2>O Compromisso PizzaStudio</h2>
                 </div>
-                
+
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="icon-wrapper">
                             <i class="fa-solid fa-bolt"></i>
                         </div>
-                        <h3>Fast Delivery</h3>
-                        <p>Hot, fresh pizza delivered to your door in under 30 minutes, keeping the crust crisp.</p>
+                        <h3>Entrega Rápida</h3>
+                        <p>Pizza quente e fresca na sua porta em menos de 30 minutos, mantendo a crocância da massa.</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-wrapper">
                             <i class="fa-solid fa-leaf"></i>
                         </div>
-                        <h3>Fresh Ingredients</h3>
-                        <p>We source local, organic produce daily to ensure the most vibrant flavors.</p>
+                        <h3>Ingredientes Frescos</h3>
+                        <p>Selecionamos produtos orgânicos e locais diariamente para garantir os sabores mais vibrantes.
+                        </p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-wrapper">
                             <i class="fa-solid fa-award"></i>
                         </div>
-                        <h3>Certified Quality</h3>
-                        <p>Our pizzaiolos are trained and certified by true Neapolitan masters.</p>
+                        <h3>Qualidade Certificada</h3>
+                        <p>Nossos pizzaiolos são treinados por mestres napolitanos seguindo a tradição.</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-wrapper">
                             <i class="fa-solid fa-mobile-screen"></i>
                         </div>
-                        <h3>Online Ordering</h3>
-                        <p>Seamless online ordering experience with real-time tracking for your delivery.</p>
+                        <h3>Pedido Online</h3>
+                        <p>Experiência de pedido simplificada com atendimento rápido via WhatsApp.</p>
                     </div>
                 </div>
             </div>
@@ -191,9 +213,9 @@
 
         <section class="cta-section">
             <div class="container text-center cta-content">
-                <h2>Craving Perfection?</h2>
-                <p>Order online right now and get 15% off your first delivery with code PIZZA15.</p>
-                <a href="#menu" class="btn btn-light cta-btn">Order Now</a>
+                <h2>Desejando a Perfeição?</h2>
+                <p>Peça online agora mesmo e ganhe 15% de desconto no seu primeiro pedido com o código PIZZA15.</p>
+                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-light cta-btn">Peça Agora</a>
             </div>
         </section>
     </main>
@@ -203,7 +225,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo">Pizza<span>Studio</span></a>
-                    <p>Authentic wood-fired pizza crafted with passion, delivered with speed.</p>
+                    <p>Autêntica pizza no forno a lenha, feita com paixão e entregue com rapidez.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -213,35 +235,37 @@
                 <div class="footer-links">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="#about">Our Story</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#delivery">Delivery</a></li>
-                        <li><a href="#">Locations</a></li>
-                    </div>
+                        <li><a href="#about">Nossa História</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#delivery">Entrega</a></li>
+                        <li><a href="#">Unidades</a></li>
+                    </ul>
+                </div>
                 <div class="footer-links">
-                    <h4>Support</h4>
+                    <h4>Suporte</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Get in Touch</h4>
+                    <h4>Fale Conosco</h4>
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> 123 Pizza Street, Food District</li>
-                        <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
-                        <li><i class="fa-solid fa-envelope"></i> hello@pizzastudio.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Rua da Pizza, 123 - Bairro Gastronômico</li>
+                        <li><i class="fa-solid fa-phone"></i> (11) 98765-4321</li>
+                        <li><i class="fa-solid fa-envelope"></i> ola@pizzastudio.com.br</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Gourmet Pizza Studio. All rights reserved.</p>
+                <p>&copy; 2026 Gourmet Pizza Studio. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

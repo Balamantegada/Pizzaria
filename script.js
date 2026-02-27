@@ -6,7 +6,7 @@ const frameCount = 80;
 const images = [];
 
 // Base path for images
-const basePath = 'Imgs/background/Create_a_dynamic_202602241327_qb72d_';
+const basePath = 'Imgs/background/PIZZARIA BG_';
 
 let loadedImages = 0;
 let isLoaded = false;
@@ -33,7 +33,6 @@ for (let i = 0; i < frameCount; i++) {
 
 // Animation loop metrics
 let currentFrame = 0;
-let direction = 1; // 1 for forward, -1 for backward
 const fps = 14; // Slower playback
 const frameInterval = 1000 / fps;
 let lastTime = 0;
@@ -73,16 +72,7 @@ function update(timestamp) {
     const elapsed = timestamp - lastTime;
 
     if (elapsed > frameInterval) {
-        currentFrame += direction;
-
-        // Reverse direction at ends
-        if (currentFrame >= frameCount - 1) {
-            currentFrame = frameCount - 1;
-            direction = -1;
-        } else if (currentFrame <= 0) {
-            currentFrame = 0;
-            direction = 1;
-        }
+        currentFrame = (currentFrame + 1) % frameCount;
 
         lastTime = timestamp - (elapsed % frameInterval);
 
